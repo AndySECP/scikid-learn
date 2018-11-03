@@ -3,7 +3,7 @@
 
 ## Objectives
 
-Improve the way students learn thanks to customized recommendation of learning contents based on their test results. Providing a personnalized education tools by adapting to each student learning style thanks to unsupervised clustering algorithms. Proving insights for students and teachers as well. 
+Improve the way students learn thanks to customized recommendation of learning contents based on their test results. Providing a personnalized education tools by adapting to each student learning style thanks to unsupervised clustering algorithms. Providing insights for students and teachers as well. 
 
 ## Project Plan
 
