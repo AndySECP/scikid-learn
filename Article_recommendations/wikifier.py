@@ -1,9 +1,7 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Wed Nov 14 23:40:50 2018
+#Created on Wed Nov 14 23:40:50 2018
 
-@author: Andy
-"""
+#@author: Andy
+
 
 import nltk
 import pandas as pd
