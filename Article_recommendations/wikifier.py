@@ -2,7 +2,7 @@
 
 #@author: Andy
 
-
+from __future__ import division, print_function # make it run on py2 an d py3
 import nltk
 import pandas as pd
 import bs4 as bs
@@ -15,7 +15,6 @@ from nltk.corpus import wordnet
 from nltk.stem import WordNetLemmatizer
 from IPython.core.display import display, HTML 
 display(HTML("<style>.container { width:90% !important; }</style>")) #if 100% it would fit the screen
-from __future__ import division, print_function # make it run on py2 an d py3
 import requests # The requests library is an HTTP library for getting c ontent and posting etc.
 import bs4 as bs # BeautifulSoup4 is a Python library for pulling data out of HTML and XML code. We can query markup languages for specific content
 import urllib.parse, urllib.request, json
