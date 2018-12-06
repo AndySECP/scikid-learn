@@ -8,7 +8,7 @@ Improve the way students learn thanks to customized recommendation of learning c
 ## Project Plan
 
 * October: _Topic Understanding and Database Management_
-* November: _Algorithm development and front end development_
+* November: _Algorithms development and front end development_
 * December: _Final product delivery_
 
 ## Team Members
