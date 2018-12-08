@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<!--
+     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet"> 
+  -->
+ <head>
+
+<script>
+	function onClick() {
+		var button = document.querySelector('.button');
+		button.onclick = function () {
+		 this.style.backgroundColor = "rgb(0,140,0)";
+		};
+	}
+</script>
+
+
+<!-- <style>
+.button {
+  &:hover {
+    background-color: lighten(grey, 5%);
+    cursor: pointer;
+    cursor: hand;
+  }
+  width: 100px;
+  height: 50px;
+  background-color: grey;
+  color: white;
+  text-align:center;
+  line-height:50px;
+  border-radius: 30px;
+}
+</style> -->
+
+
+ <link rel="icon" href="data:,">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+<link href="https://getbootstrap.com/docs/3.3/examples/jumbotron-narrow/jumbotron-narrow.css" rel="stylesheet">
+
+<meta charset="UTF-8"> 
+<title>Sci-Kid Learn</title>
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</head>
+ 
+<body>
+ 
+    <div class="container">
+
+        <div class="header">
+
+           <nav>
+
+            <ul class="nav nav-pills pull-right">
+
+              <li class="nav-item">
+                <a class="nav-link" href="/">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/SignIn">Sign In</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/SignUp">Sign Up</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active" href="/Learn">Learn</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="/AdminDashboard">Admin Dashboard</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="glyphicon glyphicon-user" href="/Dashboard"> {{ user| safe}}</a>
+              </li>
+
+          </ul>
+
+      </nav>
+
+            <h3 class="text-muted">Sci-Kid Learn</h3>
+        </div>
+
+
+<!-- <h3 class="text-muted">{{category | safe}}</h3>
+ -->
+ <h3 class="text-muted">The Sciences</h3>
+
+
+<form action = "/Learn" method = "POST" enctype="UTF-8">
+
+<BR>
+
+<div class="container">
+Click the best button for each multiple-choice question to submit your answer.
+</div>
+
+<BR>
+<br>
+
+<P> {{output.Question | safe}}<BR>
+<br>
+
+
+{% for q, a in answers.items() %}
+
+<!-- <tr> <td><button name="submission" type="submit" class="btn btn-xs"> {{ a|capitalize }} </button></td> </tr>  -->
+<!--     <input type='submit' value=' {{q | safe}}' name=' {{a | safe}}' />{{a | safe}} -->   
+
+
+{% if a == correct%}
+	 <input type='submit' onclick="onClick()" value=' {{q | capitalize}}' name='submission' />   {{ a | capitalize}}
+{% else %}
+	 <input type='submit' value=' {{q | capitalize}}' name='submission' />   {{ a | capitalize}}
+{% endif %}
+
+
+
+ <br>
+ <br>
+
+{% endfor %}
+
+
+</p>
+<br>
+<br>
+
+</form>
+</body>
+
+<footer class="footer">
+        <p>&copy; SciKid Learn, 2018</p>
+      </footer>
+
+</html>

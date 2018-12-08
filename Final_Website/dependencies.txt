@@ -1,0 +1,15 @@
+python
+pandas
+numpy
+os
+flask
+ast
+time
+werkzeug
+pickle
+json
+nltk
+bs4
+re
+requests
+urllib
