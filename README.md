@@ -23,3 +23,7 @@ Improve the way students learn thanks to customized recommendation of learning c
 
 * Košmerlj, Aljaž: _aljaz.kosmerlj@ijs.si_
 * Hodson, James: _hodson@ai4good.org_
+
+## Architecture of the solution
+
+![Architecture](https://user-images.githubusercontent.com/38164557/61997417-1b1be600-b056-11e9-9a18-57b306bf5aa0.JPG)
