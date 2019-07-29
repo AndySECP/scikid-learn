@@ -31,3 +31,17 @@ Improve the way students learn thanks to customized recommendation of learning c
 ## Architecture of the solution
 
 ![Architecture](https://user-images.githubusercontent.com/38164557/61997417-1b1be600-b056-11e9-9a18-57b306bf5aa0.JPG)
+
+## Clustering of questions by academic subject
+
+Leveraging dimensionality reduction technique, we can get some insights into the different hierarchies of subjects present in our database
+
+<p align="center">
+  <img src="https://user-images.githubusercontent.com/38164557/62025653-a51a9a80-b18d-11e9-9f79-7704c444bbd1.JPG" width="500">
+</p>
+ 
+ With a bubble plot, we can then visualize which words are more important and reflect more accuratly one cluster. A similar analysis can be done for higher n-grams.
+ 
+ <p align="center">
+  <img src="https://user-images.githubusercontent.com/38164557/62025697-cbd8d100-b18d-11e9-8325-04530104582f.JPG" width="500">
+</p>
