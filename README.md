@@ -46,7 +46,7 @@ Leveraging dimensionality reduction technique, we can get some insights into the
   <img src="https://user-images.githubusercontent.com/38164557/62025697-cbd8d100-b18d-11e9-8325-04530104582f.JPG" width="500">
 </p>
 
-## Customed Named Entity Recognition model
+## Customized Named Entity Recognition model
 
 Using Spacy's ner model and fine tuned it using our own annotated example, we created our own ner model. We first added a couple of classes, useful for our application (detecting academic subjects and cognitive skills):
 *PHY: physic
