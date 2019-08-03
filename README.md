@@ -60,7 +60,7 @@ Using Spacy's ner model and fine tuned it using our own annotated example, we cr
 
 The training of the ner model can be done by using:
 ```python
-python spacy_ner_custom_entities.py -m=en -o="path/to/output/directory" -n=100
+python ner_cust.py -m=en -o="path/to/output/directory" -n=100
 ```
 
 
