@@ -1,5 +1,6 @@
 # SciKid-Learn
 2018 - Academic project at UC Berkeley, merging both the issues of Education and Artificial Intelligence. 
+This project was presented at the **SIGKDD2019** at Anchorage during the *Social Impact Workshop*.
 
 ## Objectives
 
